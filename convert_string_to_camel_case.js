@@ -3,7 +3,7 @@ function toCamelCase(str){
         const wordsList = str.toLowerCase().split(/\W|\_/gi)
         for (i in wordsList) {
             wordsList[i]  = wordsList[i].charAt(0).toUpperCase() + wordsList[i].slice(1);
-            str = wordsList.join('').replace(wordsList[0].charAt(0), str.charAt(0));
+            str = wordsList.join('').replace(wordsList[0].charAt(0)) //str.charAt(0));
         };
     } return str;
 }
