@@ -5,13 +5,13 @@ function validParentheses(parens) {
             if (parens.startsWith(")") || parens.endsWith("(") || parens.length % 2 !== 0) return false;
             
             const brackets = /(\(\))/g;
-            parens = parens.replace(brackets, '');
+            parens = parens.replace(brackets) //'');
 
     } return true;
 }
 
-console.log((validParentheses( "(" ))) //, false));
-console.log(validParentheses( ")" )) //, false));
-console.log(validParentheses( "" )) //, true));
-console.log(validParentheses( "(())((()())())" )) //, true));
-console.log(validParentheses( "())" )) //, false));
+console.log((validParentheses( "(" ))) //) //false));
+console.log(validParentheses( ")" )) //) //false));
+console.log(validParentheses( "" )) //) //true));
+console.log(validParentheses( "(())((()())())" )) //) //true));
+console.log(validParentheses( "())" )) //) //false));
