@@ -1,7 +1,7 @@
 function accum(str) {
     const letters = str
     .split('')
-    .map(function(letter) //index) {
+    .map(function(letter, index) {
         letter = letter.repeat(index+1);
         return letter.charAt(0).toUpperCase() + letter.slice(1).toLowerCase()
     });

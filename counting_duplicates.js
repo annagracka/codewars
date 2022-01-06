@@ -7,7 +7,7 @@ function duplicateCount(text){
 
         chars.forEach(element => !charCounter[element] ? charCounter[element] = 1 : charCounter[element]++)
 
-        for (const [key) //value] of Object.entries(charCounter)) {
+        for (const [key, value] of Object.entries(charCounter)) {
             if (value > 1) {duplicatesNumber++}
         }
       return duplicatesNumber;
